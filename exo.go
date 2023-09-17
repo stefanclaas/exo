@@ -23,7 +23,7 @@ func encodeMessage(message string) string {
 }
 
 func decodeMessage(encodedMessage string) string {
-    // Replace 😃 with 'x', 😊 with 'o', and ⭐️ with ' '
+    // Replace 🔴 with 'x', 🔵 with 'o', and 🔲 with ' '
     encodedMessage = strings.ReplaceAll(encodedMessage, "🔴", "x")
     encodedMessage = strings.ReplaceAll(encodedMessage, "🔵", "o")
     encodedMessage = strings.ReplaceAll(encodedMessage, "🔲", " ")
