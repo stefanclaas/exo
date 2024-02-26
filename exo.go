@@ -15,18 +15,18 @@ import (
 )
 
 func encodeMessage(message string) string {
-    // Replace 'x' with 🔴, 'o' with 🔵, and ' ' with 🔲
+    // Replace 'x' with 🔴, 'o' with 🔵, and ' ' with ⚪
     message = strings.ReplaceAll(message, "x", "🔴")
     message = strings.ReplaceAll(message, "o", "🔵")
-    message = strings.ReplaceAll(message, " ", "🔲")
+    message = strings.ReplaceAll(message, " ", "⚪")
     return message
 }
 
 func decodeMessage(encodedMessage string) string {
-    // Replace 🔴 with 'x', 🔵 with 'o', and 🔲 with ' '
+    // Replace 🔴 with 'x', 🔵 with 'o', and ⚪ with ' '
     encodedMessage = strings.ReplaceAll(encodedMessage, "🔴", "x")
     encodedMessage = strings.ReplaceAll(encodedMessage, "🔵", "o")
-    encodedMessage = strings.ReplaceAll(encodedMessage, "🔲", " ")
+    encodedMessage = strings.ReplaceAll(encodedMessage, "⚪", " ")
     return encodedMessage
 }
 
